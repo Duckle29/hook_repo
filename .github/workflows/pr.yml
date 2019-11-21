@@ -10,5 +10,5 @@ jobs:
               with:
                   github-token: ${{secrets.GITHUB_TOKEN}}
                   script: |
-                      github.issues.createComment({...context.issue, body: '👋 Thanks for reporting! The QMK team will review your PR as soon as possible!'})
+                      github.issues.createComment({...context.issue, body: '👋 Thanks for repsorting! The QMK team will review your PR as soon as possible!'})
                       github.issues.addLabels({...context.issue, labels: ['awaiting review']})
